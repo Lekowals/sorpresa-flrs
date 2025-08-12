@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flores para Ti</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌸 Flores para Ti 🌸</h1>
+  <p>Haz clic en una flor para descubrir un mensaje especial.</p>
+
+  <div class="garden">
+    <div class="flower" onclick="showMessage('mensaje1')">🌷</div>
+    <div class="flower" onclick="showMessage('mensaje2')">🌻</div>
+    <div class="flower" onclick="showMessage('mensaje3')">🌼</div>
+  </div>
+
+  <div id="message-box" class="hidden">
+    <p id="message-text"></p>
+    <button onclick="closeMessage()">Cerrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
